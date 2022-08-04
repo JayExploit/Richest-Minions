@@ -1,2 +1,2 @@
 # Richest-Minions
-gui
+idk why im doing this
