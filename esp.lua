@@ -67,10 +67,10 @@ function CreateEsp(Player)
                 HealthBar.Filled = true
                 HealthBar.ZIndex = 69
                 if Config.HealthBarSide == "Left" then
-                    HealthBarOutline.Size = Vector2.new(2,height)
+                    HealthBarOutline.Size = Vector2.new(20,height)
                     HealthBarOutline.Position = Vector2.new(Target2dPosition.X - Box.Size.X / 2,Target2dPosition.Y - Box.Size.Y / 2) + Vector2.new(-3,0)
                     
-                    HealthBar.Size = Vector2.new(20,-(HealthBarOutline.Size.Y - 2) * (Player.Character:FindFirstChild("Humanoid").Health/Player.Character:FindFirstChild("Humanoid").MaxHealth))
+                    HealthBar.Size = Vector2.new(15,-(HealthBarOutline.Size.Y - 2) * (Player.Character:FindFirstChild("Humanoid").Health/Player.Character:FindFirstChild("Humanoid").MaxHealth))
                     HealthBar.Position = HealthBarOutline.Position + Vector2.new(1,-1 + HealthBarOutline.Size.Y)
                 elseif Config.HealthBarSide == "Bottom" then
                     HealthBarOutline.Size = Vector2.new(width,3)
