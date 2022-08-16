@@ -42,10 +42,11 @@ function CreateEsp(Player)
                 Box.Visible = false
                 BoxOutline.Visible = false
             end
-
-            if Player.leaderstats.HouseRank.Value == "Owner" and Player.leaderstats.Gender.Value == "Male" then
-                Player.leaderstats.HouseRank.Value = "Lord"
-                elseif Player.leaderstats.HouseRank.Value == "Owner" and Player.leaderstats.Gender.Value == "Female" then
+                if Player.leaderstats.HouseRank.Value == "Owner" and Player.leaderstats.Gender.Value == "Male" then
+                    Player.leaderstats.HouseRank.Value = "Lord"
+                    end
+                
+                if Player.leaderstats.HouseRank.Value == "Owner" and Player.leaderstats.Gender.Value == "Female" then
                     Player.leaderstats.HouseRank.Value = "Lady"
                 end
 
