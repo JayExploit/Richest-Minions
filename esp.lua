@@ -43,9 +43,10 @@ function CreateEsp(Player)
                 BoxOutline.Visible = false
             end
             if Config.Names then
+                         
                 Name.Visible = IsVisible
                 Name.Color = Config.NamesColor
-                Name.Text = Player.leaderstats.FirstName.Value.." "..Player.leaderstats.LastName.Value.." "..math.floor((workspace.CurrentCamera.CFrame.p - Player.Character.HumanoidRootPart.Position).magnitude).."m"
+                Name.Text = if Player.leaderstats.HouseRank.Value == "Owner" then .."Lord"..Player.leaderstats.FirstName.Value.." "..Player.leaderstats.LastName.Value.." "..math.floor((workspace.CurrentCamera.CFrame.p - Player.Character.HumanoidRootPart.Position).magnitude).."m"
                 Name.Center = true
                 Name.Outline = Config.NamesOutline
                 Name.OutlineColor = Config.NamesOutlineColor
