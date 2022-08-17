@@ -54,7 +54,7 @@ function CreateEsp(Player)
                          
                 Name.Visible = IsVisible
                 Name.Color = Config.NamesColor
-                Name.Text = Player.leaderstats.HouseRank.Value.." "..Player.leaderstats.FirstName.Value.." "..Player.leaderstats.LastName.Value.." "..math.floor((workspace.CurrentCamera.CFrame.p - Player.Character.HumanoidRootPart.Position).magnitude).."m"
+                Name.Text = Player.leaderstats.HouseRank.Value.." "..Player.leaderstats.FirstName.Value.." "..Player.leaderstats.UberTitle.Value.." "..Player.leaderstats.LastName.Value.." "..math.floor((workspace.CurrentCamera.CFrame.p - Player.Character.HumanoidRootPart.Position).magnitude).."m"
                 Name.Center = true
                 Name.Outline = Config.NamesOutline
                 Name.OutlineColor = Config.NamesOutlineColor
